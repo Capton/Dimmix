@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dimmix</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Beware of the dog in me!</string>
+    <string name="bt_on">Turn Bluetooth Off</string>
+    <string name="bt_off">Turn Bluetooth On</string>
+    <string name="title_activity_home_page">Dimmix</string>
+    <string name="title_activity_bluetooth_demo">Dimmix</string>
+    <string name="btStatusOn">Turn On</string>
+    <string name="btStatusOff">Turn Off</string>
+    <string name="connectOn">Connect</string>
+    <string name="connectOff">Disconnect</string>
+    <string name="title_activity_schedule">Schedule Timer</string>
+
+    <string-array name="intensity_list">
+        <item>Off</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="intensity_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string name="title_activity_about">About</string>
+
+</resources>
