@@ -60,6 +60,7 @@ public class HomePage extends Activity implements OnClickListener {
 	String $sensorAddress = "";
 	final String btSensorUrl = "20:15:02:26:05:09";
 	final String tecnoUrl = "TECNO T347";
+	private boolean autoConn = false;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -134,6 +135,10 @@ public class HomePage extends Activity implements OnClickListener {
 		if (btAdapter == null) {
 		}
 		else {
+			if(autoConn) {
+				btAdapter.enable();
+				createConn(btAdapter.isEnabled());
+			}
 			btStatus = btAdapter.isEnabled();
 			bTBtn.setChecked(btStatus);
 		}
@@ -228,11 +233,11 @@ public class HomePage extends Activity implements OnClickListener {
             sendMsg("5");
 		} else if (id == bTBtn.getId()) {
 			if(switchBtStatus()){
-				btAdapter.enable();
+				btStateChanged(true);
 			}
 			else{
-				btAdapter.disable();
-				connectBtn.setChecked(false);
+				createConn(false);
+				btStateChanged(false);
 			}
 		} else if (id == connectBtn.getId()) {
 			if (btStatus == true){
@@ -240,13 +245,13 @@ public class HomePage extends Activity implements OnClickListener {
 				if(sensorBonded()){
 					//connect to the sensor
 					ToastMaster(btSensor.getName() + " (" + btSensor.getAddress()+ ")" + " bonded");
-					ConnectThread connThread = new ConnectThread(btSensor);
-					connThread.run();
+					createConn(true);
+
 				}
 			}
 			else{
-				ToastMaster("Switch bt on");
-				connectBtn.setChecked(false);
+				ToastMaster("Switch Bluetooth On First");
+				btStateChanged(false);
 			}
 
 			//BluetoothDevice device = btAdapter.getRemoteDevice("");
@@ -314,11 +319,13 @@ public class HomePage extends Activity implements OnClickListener {
 			btStatus = false;
 			msg = "Disabling Bluetooth...";
 			new AttemptLogin().execute("bt");
+			btAdapter.disable();
 
 		} else {
 			btStatus = true;
 			msg = "Enabling Bluetooth...";
 			new AttemptLogin().execute("bt");
+			btAdapter.enable();
 		}
 		return btStatus;
 	}
@@ -434,9 +441,11 @@ public class HomePage extends Activity implements OnClickListener {
                 // Connect the device through the socket. This will block
                 // until it succeeds or throws an exception
                 mmSocket.connect();
+				connectBtn.setChecked(true);
 				ToastMaster("connection successful");
             } catch (IOException connectException) {
                 // Unable to connect; close the socket and get out
+				connectBtn.setChecked(false);
 				ToastMaster("connection exception msg (" + connectException.getMessage()+ " )", Toast.LENGTH_LONG);
                 try {
 					//ToastMaster("couldn't connect");
@@ -528,18 +537,44 @@ public class HomePage extends Activity implements OnClickListener {
 				final int state = intent.getIntExtra(BluetoothAdapter.EXTRA_STATE, BluetoothAdapter.ERROR);
 				switch(state) {
 					case BluetoothAdapter.STATE_OFF:
+						//ToastMaster("Bluetooth turned off");
+						btStateChanged(false);
 						break;
 					case BluetoothAdapter.STATE_TURNING_OFF:
+						//ToastMaster("Bluetooth turning off");
 						break;
 					case BluetoothAdapter.STATE_ON:
+						//ToastMaster("Bluetooth turned On");
+						btStateChanged(true);
 						break;
 					case BluetoothAdapter.STATE_TURNING_ON:
+						//ToastMaster("Bluetooth turning On");
 						break;
 				}
 
 			}
 		}
 	};
+
+	private void btStateChanged(boolean status) {
+		if(status){
+			bTBtn.setChecked(true);
+		}
+		else {
+			bTBtn.setChecked(false);
+			connectBtn.setChecked(false);
+		}
+	}
+
+	private void createConn(boolean status) {
+		if(status){
+			ConnectThread connThread = new ConnectThread(btSensor);
+			connThread.run();
+		}
+		else{
+			//ToastMaster("Connection Lost");
+		}
+	}
 
 	@Override
 	protected void onDestroy() {
