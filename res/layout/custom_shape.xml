@@ -5,11 +5,11 @@
             android:startColor="#006600"
             android:endColor="#00CC00"
             android:angle="45"/>
-   <!-- 
-    <padding android:left="10dp"
-             android:top="10dp"
-             android:right="10dp"
-             android:bottom="10dp"/>
-  	<corners android:radius="10dp"/>  -->
+    <!--
+     <padding android:left="10dp"
+              android:top="10dp"
+              android:right="10dp"
+              android:bottom="10dp"/>
+       <corners android:radius="10dp"/>  -->
 
 </shape>

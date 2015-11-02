@@ -2,44 +2,44 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.capton.dimmer"
           android:versionCode="1"
-          android:versionName="1.0" >
+          android:versionName="1.0">
 
     <uses-sdk
-            android:minSdkVersion="8"
-            android:targetSdkVersion="10" />
+            android:minSdkVersion="14"
+            android:targetSdkVersion="17"/>
 
-    <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
 
     <application
             android:allowBackup="true"
             android:icon="@drawable/bt"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            android:theme="@android:style/Theme.Black.NoTitleBar">
         <activity
                 android:name="com.capton.dimmer.Bluetooth"
-                android:label="@string/app_name" >
+                android:label="@string/app_name">
         </activity>
         <activity
                 android:name="com.capton.dimmer.HomePage"
                 android:label="@string/title_activity_home_page">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
                 android:name="com.capton.dimmer.BluetoothDemo"
-                android:label="@string/title_activity_bluetooth_demo" >
+                android:label="@string/title_activity_bluetooth_demo">
         </activity>
         <activity
                 android:name="com.capton.dimmer.Preferences"
-                android:label="Settings" >
+                android:label="Settings">
         </activity>
         <activity
                 android:name="com.capton.dimmer.About"
-                android:label="@string/title_activity_about" >
+                android:label="@string/title_activity_about">
         </activity>
         <activity
                 android:name=".BtTest"

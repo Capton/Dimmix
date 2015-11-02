@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <CheckBoxPreference
-        android:defaultValue="false"
-        android:key="pref_activate_check"
-        android:summary="Check to activate the schedule"
-        android:title="Activate" />
+            android:defaultValue="false"
+            android:key="pref_activate_check"
+            android:summary="Check to activate the schedule"
+            android:title="Activate"/>
 
     <Preference
-        android:key="pref_date"
-        android:title="Set Date" />
+            android:key="pref_date"
+            android:title="Set Date"/>
     <Preference
-        android:key="pref_time"
-        android:title="Set Time" />
+            android:key="pref_time"
+            android:title="Set Time"/>
     <Preference
             android:key="pref_btdevice"
             android:title="Bluetooth Sensor Name"
             android:summary="Not Set"/>
     <ListPreference
-        android:key="pref_intensity"
-        android:title="Intensity"
-		android:entryValues="@array/intensity_values"
-		android:entries="@array/intensity_list"
-		android:summary=""
-		android:selectable="true"
-		android:enabled="true"
-		android:defaultValue="Off">
+            android:key="pref_intensity"
+            android:title="Intensity"
+            android:entryValues="@array/intensity_values"
+            android:entries="@array/intensity_list"
+            android:summary=""
+            android:selectable="true"
+            android:enabled="true"
+            android:defaultValue="Off">
     </ListPreference>
-    
-    
+
 
 </PreferenceScreen>

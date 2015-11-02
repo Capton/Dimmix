@@ -1,8 +1,5 @@
 package com.capton.dimmer;
 
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -20,13 +17,57 @@ import android.widget.Button;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+
 public class Bluetooth extends Activity implements OnClickListener {
-    private ToggleButton btn;
-    private Button startBtn, connectbtn;
     BluetoothAdapter btAdapter;
     ArrayList<BluetoothDevice> foundBtDevicesList = null;
     Boolean btStatus = false;
     String $deviceName = "";
+    private ToggleButton btn;
+    private Button startBtn, connectbtn;
+    private BroadcastReceiver myReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            Message msg = Message.obtain();
+            String action = intent.getAction();
+            if (BluetoothDevice.ACTION_FOUND.equals(action)) {
+                Toast.makeText(context, "ACTION_FOUND", Toast.LENGTH_SHORT)
+                        .show();
+                BluetoothDevice device = intent
+                        .getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+                $deviceName = "";
+                $deviceName = device.getName();
+                try {
+                    if (createBond(device)) {
+                        Toast.makeText(getApplicationContext(), $deviceName + " is bonded", Toast.LENGTH_SHORT).show();
+                    } else
+                        Toast.makeText(getApplicationContext(), $deviceName + " bonding failed.", Toast.LENGTH_SHORT).show();
+
+                } catch (Exception e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+
+                if (foundBtDevicesList.size() < 1) {
+                    foundBtDevicesList.add(device);
+                } else {
+                    boolean flag = true;
+                    for (int i = 0; i < foundBtDevicesList.size(); i++) {
+                        if (device.getAddress().equals(
+                                foundBtDevicesList.get(i).getAddress())) {
+                            flag = false;
+                        }
+                    }
+                    if (flag == true) {
+                        foundBtDevicesList.add(device);
+                    }
+                }
+                Toast.makeText(getApplicationContext(), $deviceName, Toast.LENGTH_SHORT).show();
+            }
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -89,48 +130,6 @@ public class Bluetooth extends Activity implements OnClickListener {
         Boolean returnValue = (Boolean) createBondMethod.invoke(btDevice);
         return returnValue.booleanValue();
     }
-
-    private BroadcastReceiver myReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            Message msg = Message.obtain();
-            String action = intent.getAction();
-            if (BluetoothDevice.ACTION_FOUND.equals(action)) {
-                Toast.makeText(context, "ACTION_FOUND", Toast.LENGTH_SHORT)
-                        .show();
-                BluetoothDevice device = intent
-                        .getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
-                $deviceName = "";
-                $deviceName = device.getName();
-                try {
-                    if (createBond(device)) {
-                        Toast.makeText(getApplicationContext(), $deviceName + " is bonded", Toast.LENGTH_SHORT).show();
-                    } else
-                        Toast.makeText(getApplicationContext(), $deviceName + " bonding failed.", Toast.LENGTH_SHORT).show();
-
-                } catch (Exception e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                }
-
-                if (foundBtDevicesList.size() < 1) {
-                    foundBtDevicesList.add(device);
-                } else {
-                    boolean flag = true;
-                    for (int i = 0; i < foundBtDevicesList.size(); i++) {
-                        if (device.getAddress().equals(
-                                foundBtDevicesList.get(i).getAddress())) {
-                            flag = false;
-                        }
-                    }
-                    if (flag == true) {
-                        foundBtDevicesList.add(device);
-                    }
-                }
-                Toast.makeText(getApplicationContext(), $deviceName, Toast.LENGTH_SHORT).show();
-            }
-        }
-    };
 
     private void startSearching() {
         Log.i("Log", "in the start searching method");
