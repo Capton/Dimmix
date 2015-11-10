@@ -10,17 +10,17 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
-import android.view.Gravity;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
+import android.view.*;
 import android.view.View.OnClickListener;
 import android.widget.*;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -85,6 +85,11 @@ public class HomePage extends Activity implements OnClickListener {
     private SeekBar seekBar;
     private Dialog schedDialog;
     private BluetoothSocket mmSocket;
+    private OutputStream outputStream;
+    private InputStream inputStream;
+    private ConnectedThread mConnectedThread;
+    private Handler bluetoothInHandler;
+    final int handlerState = 0;
     private boolean autoConn = false;
     private BroadcastReceiver myReceiver = new BroadcastReceiver() {
         @Override
@@ -95,8 +100,9 @@ public class HomePage extends Activity implements OnClickListener {
                 BluetoothDevice device = intent
                         .getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
 
-                ToastMaster(device.getName() + " found ");
-                if (device.getName().equals(tecnoUrl)) {
+
+                if (device.getAddress().equals(btSensorUrl)) {
+                    ToastMaster(device.getName() + " found ");
                     btSensor = device;
                     btAdapter.cancelDiscovery();
                     sensorFound = true;
@@ -105,22 +111,20 @@ public class HomePage extends Activity implements OnClickListener {
                             ToastMaster(btSensor.getName() + " bonded");
                             ConnectThread connThread = new ConnectThread(btSensor);
                             connThread.run();
-                        } else {
+                        }
+                        else {
                             ToastMaster(btSensor.getName() + " not bonded");
                             //create bond here
                             if (createBond(btSensor)) {
                                 ConnectThread connThread = new ConnectThread(btSensor);
                                 connThread.run();
                             }
-
                         }
                     } catch (Exception e) {
                         // TODO Auto-generated catch block
                         e.printStackTrace();
                     }
                 }
-
-
                 if (foundBtDevicesList.size() < 1) {
                     foundBtDevicesList.add(device);
                 } else {
@@ -180,6 +184,12 @@ public class HomePage extends Activity implements OnClickListener {
         start_position = (int) (((start_pos - start) / (end - start)) * 100);
         discrete = start_pos;
         seekBar.setProgress(start_position);
+        seekBar.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                return true;
+            }
+        });
         seekBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
 
             @Override
@@ -201,7 +211,6 @@ public class HomePage extends Activity implements OnClickListener {
                 float temp = progress;
                 float dis = end - start;
                 discrete = (start + ((temp / 100) * dis));
-
             }
         });
 
@@ -225,6 +234,14 @@ public class HomePage extends Activity implements OnClickListener {
 
         IntentFilter filter = new IntentFilter(BluetoothAdapter.ACTION_STATE_CHANGED);
         registerReceiver(mBroadcastReceiver1, filter);
+
+        bluetoothInHandler = new Handler() {
+            public void handleMessage(android.os.Message msg) {
+                if (msg.what == handlerState) {
+                    //ToastMaster(msg.toString());
+                }
+            }
+        };
 
     }
 
@@ -375,7 +392,8 @@ public class HomePage extends Activity implements OnClickListener {
 
     public void sendMsg(String $msg) {
         ToastMaster($msg);
-
+        if(connStatus)
+            mConnectedThread.write($msg);
     }
 
     private boolean sensorBonded() {
@@ -383,7 +401,7 @@ public class HomePage extends Activity implements OnClickListener {
         Set<BluetoothDevice> pairedDevice = btAdapter.getBondedDevices();
         if (pairedDevice.size() > 0) {
             for (BluetoothDevice device : pairedDevice) {
-                if (tecnoUrl.equals(device.getName())) {
+                if (device.getAddress().equals(btSensorUrl)) {
                     btSensor = device;
                     status = true;
                 } else btSensor = null;
@@ -428,6 +446,10 @@ public class HomePage extends Activity implements OnClickListener {
         IntentFilter intentFilter = new IntentFilter(
                 BluetoothDevice.ACTION_FOUND);
         HomePage.this.registerReceiver(myReceiver, intentFilter);
+        if(btAdapter.isDiscovering()) {
+            ToastMaster("canceling discovery");
+            btAdapter.cancelDiscovery();
+        }
         btAdapter.startDiscovery();
     }
 
@@ -525,21 +547,16 @@ public class HomePage extends Activity implements OnClickListener {
 
             // Do work to manage the connection (in a separate thread)
             //  manageConnectedSocket(mmSocket);
+            mConnectedThread = new ConnectedThread(mmSocket);
+            mConnectedThread.start();
+
         }
 
         /**
          * Will cancel an in-progress connection, and close the socket
          */
-        public void closeConn() {
-
-            try {
-                Thread.sleep(1000);
-                mmSocket.close();
-            } catch (IOException e) {
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
+        public void cancel() {
+            closeConn();
         }
     }
 
@@ -577,6 +594,8 @@ public class HomePage extends Activity implements OnClickListener {
 
     public void closeConn() {
         //adding the Thread.sleep(1000) before reseting the conection releases the bluetooth.
+        if(btAdapter.isDiscovering())
+            btAdapter.cancelDiscovery();
         if (connStatus) {
             try {
                 Thread.sleep(1000);
@@ -593,7 +612,7 @@ public class HomePage extends Activity implements OnClickListener {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
+        unregisterReceiver(myReceiver);
         unregisterReceiver(mBroadcastReceiver1);
     }
 
@@ -607,5 +626,55 @@ public class HomePage extends Activity implements OnClickListener {
 
         closeConn();
 
+    }
+
+    //create new class for connect thread
+    private class ConnectedThread extends Thread {
+        private final InputStream mmInStream;
+        private final OutputStream mmOutStream;
+
+        //creation of the connect thread
+        public ConnectedThread(BluetoothSocket socket) {
+            InputStream tmpIn = null;
+            OutputStream tmpOut = null;
+
+            try {
+                //Create I/O streams for connection
+                tmpIn = socket.getInputStream();
+                tmpOut = socket.getOutputStream();
+            } catch (IOException e) { }
+
+            mmInStream = tmpIn;
+            mmOutStream = tmpOut;
+        }
+
+        public void run() {
+            byte[] buffer = new byte[256];
+            int bytes;
+
+            // Keep looping to listen for received messages
+            while (true) {
+                try {
+                    bytes = mmInStream.read(buffer);            //read bytes from input buffer
+                    String readMessage = new String(buffer, 0, bytes);
+                    // Send the obtained bytes to the UI Activity via handler
+                    bluetoothInHandler.obtainMessage(handlerState, bytes, -1, readMessage).sendToTarget();
+                } catch (IOException e) {
+                    break;
+                }
+            }
+        }
+        //write method
+        public void write(String input) {
+            byte[] msgBuffer = input.getBytes();           //converts entered String into bytes
+            try {
+                mmOutStream.write(msgBuffer);                //write bytes over BT connection via outstream
+            } catch (IOException e) {
+                //if you cannot write, close the application
+                Toast.makeText(getBaseContext(), "Connection Failure", Toast.LENGTH_LONG).show();
+                finish();
+
+            }
+        }
     }
 }

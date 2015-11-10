@@ -30,26 +30,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ced09a7-6417-4585-ac5a-faf05012a6a4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/capton/dimmer/About.java" afterPath="$PROJECT_DIR$/src/com/capton/dimmer/About.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/capton/dimmer/Bluetooth.java" afterPath="$PROJECT_DIR$/src/com/capton/dimmer/Bluetooth.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/capton/dimmer/BluetoothDemo.java" afterPath="$PROJECT_DIR$/src/com/capton/dimmer/BluetoothDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/capton/dimmer/BtTest.java" afterPath="$PROJECT_DIR$/src/com/capton/dimmer/BtTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java" afterPath="$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LightDimmer.iml" afterPath="$PROJECT_DIR$/LightDimmer.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/capton/dimmer/Preferences.java" afterPath="$PROJECT_DIR$/src/com/capton/dimmer/Preferences.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/about.xml" afterPath="$PROJECT_DIR$/res/menu/about.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_about.xml" afterPath="$PROJECT_DIR$/res/layout/activity_about.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_home_page.xml" afterPath="$PROJECT_DIR$/res/layout/activity_home_page.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-xlarge/activity_home_page.xml" afterPath="$PROJECT_DIR$/res/layout-xlarge/activity_home_page.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_test.xml" afterPath="$PROJECT_DIR$/res/layout/activity_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/custom_shape.xml" afterPath="$PROJECT_DIR$/res/layout/custom_shape.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/home_page.xml" afterPath="$PROJECT_DIR$/res/menu/home_page.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/xml/preferences.xml" afterPath="$PROJECT_DIR$/res/xml/preferences.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/styles.xml" afterPath="$PROJECT_DIR$/res/values/styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LightDimmer.iws" />
@@ -108,8 +89,8 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -122,7 +103,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="3917" max-vertical-offset="5508">
               <caret line="218" column="5" selection-start-line="218" selection-start-column="5" selection-end-line="218" selection-end-column="5" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="docComment;field#listViewPaired#0;class#BluetoothDemo#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,7 +116,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1998">
               <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,7 +152,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
+            <state vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="990">
               <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
               <folding />
             </state>
@@ -186,27 +172,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="738">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5479452" vertical-offset="10020" max-vertical-offset="10764">
-              <caret line="589" column="9" selection-start-line="589" selection-start-column="9" selection-end-line="589" selection-end-column="9" />
+            <state vertical-scroll-proportion="10.817734" vertical-offset="0" max-vertical-offset="7110">
+              <caret line="442" column="0" selection-start-line="442" selection-start-column="0" selection-end-line="442" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#14199#14242#0" expanded="true" />
+                <element signature="e#1406#2647#0" expanded="true" />
+                <element signature="e#2646#2647#0" expanded="true" />
+                <element signature="e#3509#5676#0" expanded="true" />
+                <element signature="e#5675#5676#0" expanded="true" />
+                <element signature="e#7659#7835#0" expanded="true" />
+                <element signature="e#7834#7835#0" expanded="true" />
+                <element signature="e#9410#9630#0" expanded="true" />
+                <element signature="e#9629#9630#0" expanded="true" />
+                <element signature="method#toNotificationBar#0;class#HomePage#0" expanded="false" />
+                <element signature="e#14886#14929#0" expanded="true" />
+                <element signature="method#sendMsg#0;class#HomePage#0" expanded="false" />
+                <element signature="method#sensorBonded#0;class#HomePage#0" expanded="false" />
+                <element signature="method#switchBtStatus#0;class#HomePage#0" expanded="false" />
+                <element signature="method#createBond#0;class#HomePage#0" expanded="false" />
+                <element signature="method#startSearching#0;class#HomePage#0" expanded="false" />
                 <element signature="method#ToastMaster#0;class#HomePage#0" expanded="false" />
                 <element signature="method#ToastMaster#1;class#HomePage#0" expanded="false" />
-                <element signature="docComment;method#closeConn#0;class#ConnectThread#0;class#HomePage#0" expanded="true" />
+                <element signature="method#btStateChanged#0;class#HomePage#0" expanded="false" />
+                <element signature="method#createConn#0;class#HomePage#0" expanded="false" />
+                <element signature="class#ConnectThread#0;class#HomePage#0" expanded="false" />
+                <element signature="method#run#0;class#ConnectThread#0;class#HomePage#0" expanded="false" />
+                <element signature="docComment;method#cancel#0;class#ConnectThread#0;class#HomePage#0" expanded="true" />
+                <element signature="e#20627#20628#0" expanded="true" />
+                <element signature="e#20662#20663#0" expanded="true" />
+                <element signature="class#AttemptLogin#0;class#HomePage#0" expanded="false" />
+                <element signature="method#onPostExecute#0;class#AttemptLogin#0;class#HomePage#0" expanded="false" />
+                <element signature="method#closeConn#0;class#HomePage#0" expanded="false" />
+                <element signature="method#onDestroy#0;class#HomePage#0" expanded="false" />
+                <element signature="method#onStop#0;class#HomePage#0" expanded="false" />
+                <element signature="class#ConnectedThread#0;class#HomePage#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -215,9 +216,12 @@
       <file leaf-file-name="MyActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/capton/dimmer/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+            <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="324">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -225,9 +229,11 @@
       <file leaf-file-name="Bluetooth.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/capton/dimmer/Bluetooth.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="2268">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1314" max-vertical-offset="2322">
               <caret line="91" column="0" selection-start-line="107" selection-start-column="95" selection-end-line="107" selection-end-column="102" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -267,9 +273,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="45" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1321" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -299,6 +305,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -387,7 +394,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -431,6 +437,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="203" />
     <property name="LayoutCode.rearrangeEntries" value="true" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
   </component>
   <component name="RunManager" selected="Android Application.LightDimmer">
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
@@ -775,15 +782,16 @@
       <workItem from="1445990047263" duration="340000" />
       <workItem from="1446205339653" duration="14469000" />
       <workItem from="1446412223596" duration="10998000" />
-      <workItem from="1446425122700" duration="4431000" />
+      <workItem from="1446425122700" duration="5380000" />
+      <workItem from="1447098002244" duration="14322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75697000" />
+    <option name="totallyTimeSpent" value="90968000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="24" width="1321" height="744" extended-state="6" />
+    <frame x="45" y="-4" width="1321" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -794,15 +802,15 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25295857" sideWeight="0.67827404" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40236688" sideWeight="0.67827404" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25295857" sideWeight="0.32172596" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.39137018" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988167" sideWeight="0.4996215" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15088758" sideWeight="0.4996215" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.6086298" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4127219" sideWeight="0.6086298" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -840,127 +848,121 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>507</line>
+          <line>529</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>495</line>
+          <line>517</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>494</line>
+          <line>516</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>518</line>
+          <line>540</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>124</line>
+          <line>128</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>129</line>
+          <line>133</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>134</line>
+          <line>138</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>429</line>
+          <line>447</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>381</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>396</line>
+          <line>414</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>397</line>
+          <line>415</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>398</line>
+          <line>416</line>
           <properties />
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>400</line>
+          <line>418</line>
           <properties />
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>403</line>
+          <line>421</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>404</line>
+          <line>422</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>405</line>
+          <line>423</line>
           <properties />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>406</line>
+          <line>424</line>
           <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>460</line>
+          <line>482</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>461</line>
+          <line>483</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>463</line>
+          <line>485</line>
           <properties />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>409</line>
+          <line>427</line>
           <properties />
           <option name="timeStamp" value="68" />
         </line-breakpoint>
@@ -1002,336 +1004,402 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>407</line>
+          <line>425</line>
           <properties />
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>401</line>
+          <line>419</line>
           <properties />
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>321</line>
+          <line>338</line>
           <properties />
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>324</line>
+          <line>341</line>
           <properties />
           <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>325</line>
+          <line>342</line>
           <properties />
           <option name="timeStamp" value="87" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>326</line>
+          <line>343</line>
           <properties />
           <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>327</line>
+          <line>344</line>
           <properties />
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>329</line>
+          <line>346</line>
           <properties />
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>330</line>
+          <line>347</line>
           <properties />
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>331</line>
+          <line>348</line>
           <properties />
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>332</line>
+          <line>349</line>
           <properties />
           <option name="timeStamp" value="93" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>340</line>
+          <line>357</line>
           <properties />
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>339</line>
+          <line>356</line>
           <properties />
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>343</line>
+          <line>360</line>
           <properties />
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>342</line>
+          <line>359</line>
           <properties />
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>459</line>
+          <line>481</line>
           <properties />
           <option name="timeStamp" value="99" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>509</line>
+          <line>531</line>
           <properties />
           <option name="timeStamp" value="102" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>430</line>
+          <line>452</line>
           <properties />
           <option name="timeStamp" value="103" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>427</line>
+          <line>445</line>
           <properties />
           <option name="timeStamp" value="104" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>91</line>
+          <line>96</line>
           <properties />
           <option name="timeStamp" value="105" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>94</line>
+          <line>99</line>
           <properties />
           <option name="timeStamp" value="106" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>93</line>
+          <line>98</line>
           <properties />
           <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>98</line>
+          <line>103</line>
           <properties />
           <option name="timeStamp" value="108" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>99</line>
+          <line>105</line>
           <properties />
           <option name="timeStamp" value="109" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>128</line>
+          <line>132</line>
           <properties />
           <option name="timeStamp" value="110" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>104</line>
+          <line>110</line>
           <properties />
           <option name="timeStamp" value="111" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>105</line>
+          <line>111</line>
           <properties />
           <option name="timeStamp" value="112" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>106</line>
+          <line>112</line>
           <properties />
           <option name="timeStamp" value="113" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>108</line>
-          <properties />
-          <option name="timeStamp" value="114" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>110</line>
+          <line>117</line>
           <properties />
           <option name="timeStamp" value="115" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>111</line>
+          <line>118</line>
           <properties />
           <option name="timeStamp" value="116" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>510</line>
+          <line>532</line>
           <properties />
           <option name="timeStamp" value="117" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>511</line>
+          <line>533</line>
           <properties />
           <option name="timeStamp" value="118" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>519</line>
+          <line>541</line>
           <properties />
           <option name="timeStamp" value="119" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>520</line>
+          <line>542</line>
           <properties />
           <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>522</line>
+          <line>544</line>
           <properties />
           <option name="timeStamp" value="121" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>521</line>
+          <line>543</line>
           <properties />
           <option name="timeStamp" value="122" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>392</line>
+          <line>410</line>
           <properties />
           <option name="timeStamp" value="130" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>501</line>
+          <line>523</line>
           <properties />
           <option name="timeStamp" value="132" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>502</line>
+          <line>524</line>
           <properties />
           <option name="timeStamp" value="133" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>503</line>
+          <line>525</line>
           <properties />
           <option name="timeStamp" value="134" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>498</line>
+          <line>520</line>
           <properties />
           <option name="timeStamp" value="135" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>499</line>
+          <line>521</line>
           <properties />
           <option name="timeStamp" value="136" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>317</line>
-          <properties />
-          <option name="timeStamp" value="137" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>318</line>
-          <properties />
-          <option name="timeStamp" value="138" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>315</line>
-          <properties />
-          <option name="timeStamp" value="139" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>319</line>
+          <line>336</line>
           <properties />
           <option name="timeStamp" value="140" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>316</line>
-          <properties />
-          <option name="timeStamp" value="141" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>322</line>
+          <line>339</line>
           <properties />
           <option name="timeStamp" value="142" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>323</line>
+          <line>340</line>
           <properties />
           <option name="timeStamp" value="143" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>384</line>
-          <properties />
-          <option name="timeStamp" value="147" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>413</line>
+          <line>431</line>
           <properties />
           <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>421</line>
+          <line>439</line>
           <properties />
           <option name="timeStamp" value="150" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>417</line>
+          <line>435</line>
           <properties />
           <option name="timeStamp" value="151" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
-          <line>419</line>
+          <line>437</line>
           <properties />
           <option name="timeStamp" value="152" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
+          <line>108</line>
+          <properties />
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
+          <line>107</line>
+          <properties />
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
+          <line>106</line>
+          <properties />
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
+          <line>115</line>
+          <properties />
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
+          <line>124</line>
+          <properties />
+          <option name="timeStamp" value="159" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
+          <line>122</line>
+          <properties />
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
+          <line>549</line>
+          <properties />
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
+          <line>550</line>
+          <properties />
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
+          <line>395</line>
+          <properties />
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
+          <line>668</line>
+          <properties />
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
+          <line>669</line>
+          <properties />
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
+          <line>670</line>
+          <properties />
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
+          <line>212</line>
+          <properties />
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
+          <line>211</line>
+          <properties />
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java</url>
+          <line>210</line>
+          <properties />
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="153" />
+      <option name="time" value="181" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1340,46 +1408,41 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/capton/dimmer/BluetoothDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4935">
-          <caret line="319" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="4290" max-vertical-offset="5145">
-          <caret line="286" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#14199#14242#0" expanded="true" />
-            <element signature="method#ToastMaster#0;class#HomePage#0" expanded="false" />
-            <element signature="method#ToastMaster#1;class#HomePage#0" expanded="false" />
-            <element signature="docComment;method#closeConn#0;class#ConnectThread#0;class#HomePage#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/capton/dimmer/BluetoothDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4935">
-          <caret line="319" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2925" max-vertical-offset="4965">
           <caret line="195" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#14199#14242#0" expanded="true" />
+            <element signature="e#1406#2647#0" expanded="true" />
+            <element signature="e#2646#2647#0" expanded="true" />
+            <element signature="e#3509#5676#0" expanded="true" />
+            <element signature="e#5675#5676#0" expanded="true" />
+            <element signature="e#7659#7835#0" expanded="true" />
+            <element signature="e#7834#7835#0" expanded="true" />
+            <element signature="e#9410#9630#0" expanded="true" />
+            <element signature="e#9629#9630#0" expanded="true" />
+            <element signature="method#toNotificationBar#0;class#HomePage#0" expanded="false" />
+            <element signature="e#14886#14929#0" expanded="true" />
+            <element signature="method#sendMsg#0;class#HomePage#0" expanded="false" />
+            <element signature="method#sensorBonded#0;class#HomePage#0" expanded="false" />
+            <element signature="method#switchBtStatus#0;class#HomePage#0" expanded="false" />
+            <element signature="method#createBond#0;class#HomePage#0" expanded="false" />
+            <element signature="method#startSearching#0;class#HomePage#0" expanded="false" />
             <element signature="method#ToastMaster#0;class#HomePage#0" expanded="false" />
             <element signature="method#ToastMaster#1;class#HomePage#0" expanded="false" />
-            <element signature="docComment;method#closeConn#0;class#ConnectThread#0;class#HomePage#0" expanded="true" />
+            <element signature="method#btStateChanged#0;class#HomePage#0" expanded="false" />
+            <element signature="method#createConn#0;class#HomePage#0" expanded="false" />
+            <element signature="class#ConnectThread#0;class#HomePage#0" expanded="false" />
+            <element signature="method#run#0;class#ConnectThread#0;class#HomePage#0" expanded="false" />
+            <element signature="docComment;method#cancel#0;class#ConnectThread#0;class#HomePage#0" expanded="true" />
+            <element signature="e#20627#20628#0" expanded="true" />
+            <element signature="e#20662#20663#0" expanded="true" />
+            <element signature="class#AttemptLogin#0;class#HomePage#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#AttemptLogin#0;class#HomePage#0" expanded="false" />
+            <element signature="method#closeConn#0;class#HomePage#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#HomePage#0" expanded="false" />
+            <element signature="method#onStop#0;class#HomePage#0" expanded="false" />
+            <element signature="class#ConnectedThread#0;class#HomePage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1388,7 +1451,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4935">
           <caret line="319" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;field#listViewPaired#0;class#BluetoothDemo#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1397,11 +1463,36 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3420" max-vertical-offset="4590">
           <caret line="228" column="78" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#14199#14242#0" expanded="true" />
+            <element signature="e#1406#2647#0" expanded="true" />
+            <element signature="e#2646#2647#0" expanded="true" />
+            <element signature="e#3509#5676#0" expanded="true" />
+            <element signature="e#5675#5676#0" expanded="true" />
+            <element signature="e#7659#7835#0" expanded="true" />
+            <element signature="e#7834#7835#0" expanded="true" />
+            <element signature="e#9410#9630#0" expanded="true" />
+            <element signature="e#9629#9630#0" expanded="true" />
+            <element signature="method#toNotificationBar#0;class#HomePage#0" expanded="false" />
+            <element signature="e#14886#14929#0" expanded="true" />
+            <element signature="method#sendMsg#0;class#HomePage#0" expanded="false" />
+            <element signature="method#sensorBonded#0;class#HomePage#0" expanded="false" />
+            <element signature="method#switchBtStatus#0;class#HomePage#0" expanded="false" />
+            <element signature="method#createBond#0;class#HomePage#0" expanded="false" />
+            <element signature="method#startSearching#0;class#HomePage#0" expanded="false" />
             <element signature="method#ToastMaster#0;class#HomePage#0" expanded="false" />
             <element signature="method#ToastMaster#1;class#HomePage#0" expanded="false" />
-            <element signature="docComment;method#closeConn#0;class#ConnectThread#0;class#HomePage#0" expanded="true" />
+            <element signature="method#btStateChanged#0;class#HomePage#0" expanded="false" />
+            <element signature="method#createConn#0;class#HomePage#0" expanded="false" />
+            <element signature="class#ConnectThread#0;class#HomePage#0" expanded="false" />
+            <element signature="method#run#0;class#ConnectThread#0;class#HomePage#0" expanded="false" />
+            <element signature="docComment;method#cancel#0;class#ConnectThread#0;class#HomePage#0" expanded="true" />
+            <element signature="e#20627#20628#0" expanded="true" />
+            <element signature="e#20662#20663#0" expanded="true" />
+            <element signature="class#AttemptLogin#0;class#HomePage#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#AttemptLogin#0;class#HomePage#0" expanded="false" />
+            <element signature="method#closeConn#0;class#HomePage#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#HomePage#0" expanded="false" />
+            <element signature="method#onStop#0;class#HomePage#0" expanded="false" />
+            <element signature="class#ConnectedThread#0;class#HomePage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1410,7 +1501,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4545" max-vertical-offset="4545">
           <caret line="319" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;field#listViewPaired#0;class#BluetoothDemo#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1445,11 +1539,36 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3195" max-vertical-offset="4350">
           <caret line="213" column="45" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#14199#14242#0" expanded="true" />
+            <element signature="e#1406#2647#0" expanded="true" />
+            <element signature="e#2646#2647#0" expanded="true" />
+            <element signature="e#3509#5676#0" expanded="true" />
+            <element signature="e#5675#5676#0" expanded="true" />
+            <element signature="e#7659#7835#0" expanded="true" />
+            <element signature="e#7834#7835#0" expanded="true" />
+            <element signature="e#9410#9630#0" expanded="true" />
+            <element signature="e#9629#9630#0" expanded="true" />
+            <element signature="method#toNotificationBar#0;class#HomePage#0" expanded="false" />
+            <element signature="e#14886#14929#0" expanded="true" />
+            <element signature="method#sendMsg#0;class#HomePage#0" expanded="false" />
+            <element signature="method#sensorBonded#0;class#HomePage#0" expanded="false" />
+            <element signature="method#switchBtStatus#0;class#HomePage#0" expanded="false" />
+            <element signature="method#createBond#0;class#HomePage#0" expanded="false" />
+            <element signature="method#startSearching#0;class#HomePage#0" expanded="false" />
             <element signature="method#ToastMaster#0;class#HomePage#0" expanded="false" />
             <element signature="method#ToastMaster#1;class#HomePage#0" expanded="false" />
-            <element signature="docComment;method#closeConn#0;class#ConnectThread#0;class#HomePage#0" expanded="true" />
+            <element signature="method#btStateChanged#0;class#HomePage#0" expanded="false" />
+            <element signature="method#createConn#0;class#HomePage#0" expanded="false" />
+            <element signature="class#ConnectThread#0;class#HomePage#0" expanded="false" />
+            <element signature="method#run#0;class#ConnectThread#0;class#HomePage#0" expanded="false" />
+            <element signature="docComment;method#cancel#0;class#ConnectThread#0;class#HomePage#0" expanded="true" />
+            <element signature="e#20627#20628#0" expanded="true" />
+            <element signature="e#20662#20663#0" expanded="true" />
+            <element signature="class#AttemptLogin#0;class#HomePage#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#AttemptLogin#0;class#HomePage#0" expanded="false" />
+            <element signature="method#closeConn#0;class#HomePage#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#HomePage#0" expanded="false" />
+            <element signature="method#onStop#0;class#HomePage#0" expanded="false" />
+            <element signature="class#ConnectedThread#0;class#HomePage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1524,11 +1643,36 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="3195" max-vertical-offset="4350">
           <caret line="213" column="45" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#14199#14242#0" expanded="true" />
+            <element signature="e#1406#2647#0" expanded="true" />
+            <element signature="e#2646#2647#0" expanded="true" />
+            <element signature="e#3509#5676#0" expanded="true" />
+            <element signature="e#5675#5676#0" expanded="true" />
+            <element signature="e#7659#7835#0" expanded="true" />
+            <element signature="e#7834#7835#0" expanded="true" />
+            <element signature="e#9410#9630#0" expanded="true" />
+            <element signature="e#9629#9630#0" expanded="true" />
+            <element signature="method#toNotificationBar#0;class#HomePage#0" expanded="false" />
+            <element signature="e#14886#14929#0" expanded="true" />
+            <element signature="method#sendMsg#0;class#HomePage#0" expanded="false" />
+            <element signature="method#sensorBonded#0;class#HomePage#0" expanded="false" />
+            <element signature="method#switchBtStatus#0;class#HomePage#0" expanded="false" />
+            <element signature="method#createBond#0;class#HomePage#0" expanded="false" />
+            <element signature="method#startSearching#0;class#HomePage#0" expanded="false" />
             <element signature="method#ToastMaster#0;class#HomePage#0" expanded="false" />
             <element signature="method#ToastMaster#1;class#HomePage#0" expanded="false" />
-            <element signature="docComment;method#closeConn#0;class#ConnectThread#0;class#HomePage#0" expanded="true" />
+            <element signature="method#btStateChanged#0;class#HomePage#0" expanded="false" />
+            <element signature="method#createConn#0;class#HomePage#0" expanded="false" />
+            <element signature="class#ConnectThread#0;class#HomePage#0" expanded="false" />
+            <element signature="method#run#0;class#ConnectThread#0;class#HomePage#0" expanded="false" />
+            <element signature="docComment;method#cancel#0;class#ConnectThread#0;class#HomePage#0" expanded="true" />
+            <element signature="e#20627#20628#0" expanded="true" />
+            <element signature="e#20662#20663#0" expanded="true" />
+            <element signature="class#AttemptLogin#0;class#HomePage#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#AttemptLogin#0;class#HomePage#0" expanded="false" />
+            <element signature="method#closeConn#0;class#HomePage#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#HomePage#0" expanded="false" />
+            <element signature="method#onStop#0;class#HomePage#0" expanded="false" />
+            <element signature="class#ConnectedThread#0;class#HomePage#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1683,7 +1827,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="648" max-vertical-offset="2268">
           <caret line="91" column="0" selection-start-line="107" selection-start-column="95" selection-end-line="107" selection-end-column="102" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1702,7 +1848,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1998">
           <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1739,7 +1887,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3917" max-vertical-offset="5508">
           <caret line="218" column="5" selection-start-line="218" selection-start-column="5" selection-end-line="218" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;field#listViewPaired#0;class#BluetoothDemo#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1754,7 +1905,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1766,16 +1920,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Tools/android-linux-sdk/sources/android-17/android/os/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3317757" vertical-offset="1730" max-vertical-offset="6246">
+          <caret line="304" column="25" selection-start-line="304" selection-start-column="25" selection-end-line="304" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Tools/android-linux-sdk/sources/android-17/android/os/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3317757" vertical-offset="3422" max-vertical-offset="5796">
+          <caret line="358" column="16" selection-start-line="358" selection-start-column="16" selection-end-line="358" selection-end-column="16" />
+          <folding>
+            <element signature="e#11539#11540#0" expanded="false" />
+            <element signature="e#11579#11580#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Tools/android-linux-sdk/sources/android-17/android/widget/SeekBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33243242" vertical-offset="147" max-vertical-offset="1440">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/capton/dimmer/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5479452" vertical-offset="10020" max-vertical-offset="10764">
-          <caret line="589" column="9" selection-start-line="589" selection-start-column="9" selection-end-line="589" selection-end-column="9" />
+        <state vertical-scroll-proportion="10.817734" vertical-offset="0" max-vertical-offset="7110">
+          <caret line="442" column="0" selection-start-line="442" selection-start-column="0" selection-end-line="442" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#14199#14242#0" expanded="true" />
+            <element signature="e#1406#2647#0" expanded="true" />
+            <element signature="e#2646#2647#0" expanded="true" />
+            <element signature="e#3509#5676#0" expanded="true" />
+            <element signature="e#5675#5676#0" expanded="true" />
+            <element signature="e#7659#7835#0" expanded="true" />
+            <element signature="e#7834#7835#0" expanded="true" />
+            <element signature="e#9410#9630#0" expanded="true" />
+            <element signature="e#9629#9630#0" expanded="true" />
+            <element signature="method#toNotificationBar#0;class#HomePage#0" expanded="false" />
+            <element signature="e#14886#14929#0" expanded="true" />
+            <element signature="method#sendMsg#0;class#HomePage#0" expanded="false" />
+            <element signature="method#sensorBonded#0;class#HomePage#0" expanded="false" />
+            <element signature="method#switchBtStatus#0;class#HomePage#0" expanded="false" />
+            <element signature="method#createBond#0;class#HomePage#0" expanded="false" />
+            <element signature="method#startSearching#0;class#HomePage#0" expanded="false" />
             <element signature="method#ToastMaster#0;class#HomePage#0" expanded="false" />
             <element signature="method#ToastMaster#1;class#HomePage#0" expanded="false" />
-            <element signature="docComment;method#closeConn#0;class#ConnectThread#0;class#HomePage#0" expanded="true" />
+            <element signature="method#btStateChanged#0;class#HomePage#0" expanded="false" />
+            <element signature="method#createConn#0;class#HomePage#0" expanded="false" />
+            <element signature="class#ConnectThread#0;class#HomePage#0" expanded="false" />
+            <element signature="method#run#0;class#ConnectThread#0;class#HomePage#0" expanded="false" />
+            <element signature="docComment;method#cancel#0;class#ConnectThread#0;class#HomePage#0" expanded="true" />
+            <element signature="e#20627#20628#0" expanded="true" />
+            <element signature="e#20662#20663#0" expanded="true" />
+            <element signature="class#AttemptLogin#0;class#HomePage#0" expanded="false" />
+            <element signature="method#onPostExecute#0;class#AttemptLogin#0;class#HomePage#0" expanded="false" />
+            <element signature="method#closeConn#0;class#HomePage#0" expanded="false" />
+            <element signature="method#onDestroy#0;class#HomePage#0" expanded="false" />
+            <element signature="method#onStop#0;class#HomePage#0" expanded="false" />
+            <element signature="class#ConnectedThread#0;class#HomePage#0" expanded="false" />
           </folding>
         </state>
       </provider>
